@@ -1,0 +1,148 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/* header */
+
+body{
+    background-color: aliceblue;
+}
+
+.Container{
+display: flex;
+justify-content: space-evenly;
+}
+
+
+
+#clockContainer{
+    background-image: url('images/clock3.gif');
+    height: 40vw;
+    width: 40vw;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: auto;
+    position: relative;
+    margin-top: 3%;
+    opacity: 0.8;
+}
+
+#hour,
+#minute,
+#second{
+    position: absolute;
+    background-color: black;
+    border-radius: 8px;
+    transform-origin: bottom;
+}
+
+#hour{
+    height: 24%;
+    width: 2%;
+    top: 25%;
+    left: 48.9%;
+}
+
+#minute{
+    height: 28%;
+    width: 1.8%;
+    top: 22%;
+    left: 49%;
+    opacity: 0.8;
+}
+
+#second{
+    height: 34%;
+    width: 1.2%;
+    top: 16%;
+    left: 49.2%;
+}
+
+.left{
+    align-self: center;
+    font-family: 'Poppins',sans-serif;
+    background-color: yellow;
+    padding: 2vw;
+    border-radius: 15px;
+    margin-left: 1rem;
+    box-shadow: 0 13px 20px rgba(0, 0, 0, 0.8);
+    font-weight: 600;
+    text-align: center;
+    height: 20vw;
+    width: 30vw;
+    text-align: start;
+}
+
+
+/* media query */
+
+@media screen and (max-width:1024px) {
+    
+.left{
+    height: 30vw;
+    width: 40vw;
+}
+
+}
+
+/* media query for tablets */
+
+@media  screen and (max-width:820px) {
+    
+h1{
+    font-size: 1.6rem;
+}
+
+p{
+    font-size: 0.8rem;
+    padding-top: 10px;
+}
+
+.left{
+    text-align: start;
+}
+}
+
+
+
+/* media querys for mobiles */
+
+@media screen and (max-width: 693px) {
+    
+.Container{
+    flex-direction: column-reverse;
+    gap: 3vw;
+}
+
+.left{
+    width: 70vw;
+    height: 30vh;
+
+}
+}
+
+
+/* media querys for small mobiles */
+
+@media screen and (max-width:502px) {
+    
+#clockContainer{
+    width: 50vw;
+    height: 50vw;
+}
+
+.Container{
+    gap: 8vw;
+}
+
+.left{
+    height: 40vh;
+    width: 80vw;
+    padding: 0.5rem;
+}
+}
+
+
+
